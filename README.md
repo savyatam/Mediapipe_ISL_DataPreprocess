@@ -43,8 +43,22 @@ to our new demo_run_graph_main.cc file in the modified_mediapipe folder.
 ```
 to our new landmarks_to_render_data_calculator.cc file in the modified_mediapipe folder.
 
+IMPORTANT: 
+
+This code would crash (error: segmentation fault) if you apply for any other solutions with greater landmarks. 
+
+```shell
+cd ~/mediapipe/mediapipe/examples/desktop/demo_run_graph_main.cc
+
+In line 35: vector<pair<float,float>> posl(468);
+
+```
+In such cases make sure the size assigned to **posl** variable is greater than the maximum possible landmarks.
+
 ### 2. Create your own training data
-Make **train_videos** for each sign language word in one folder. Use **build_multihands.py** and **build_facemesh.py** files to your mediapipe directory.
+
+Make **train_videos** for each sign language word in one folder. Use **build_multihands.py** and **build_facemesh.py** files to your mediapipe directory. Indian Sign Language dataset is available [here](https://zenodo.org/record/4010759#.YNBrERHhVuR).
+
 * Usage
 
 To make mp4 file and txt file with mediapipe automatically, run inside mediapipe directory.
@@ -101,21 +115,6 @@ OutputHands
      ├── Gesture1_3.mp4
      └── Gesture1_4.mp4
 ```
-
-You can find Indian Sign Language dataset [here](https://zenodo.org/record/4010759#.YNBrERHhVuR).
-
-
-IMPORTANT: 
-
-This code would crash (error: segmentation fault) if you apply for any other solutions with greater landmarks. 
-
-```shell
-cd ~/mediapipe/mediapipe/examples/desktop/demo_run_graph_main.cc
-
-In line 35: vector<pair<float,float>> posl(468);
-
-```
-In such cases make sure the size assigned to **posl** variable is greater than the maximum possible landmarks.
 
 
 ### 3. Use either relative or absolute data to train your RNN model.
