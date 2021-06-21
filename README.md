@@ -65,7 +65,7 @@ To make mp4 file and txt file with mediapipe automatically, run inside mediapipe
 ```shell
   python build_file.py --input_data_path=[INPUT_PATH] --output_data_path=[OUTPUT_PATH]
 ```
-*Example
+For example
 ```shell
   python build_multihands --input_data_path=Input/ --output_data_path=OutputHands/
 ```
@@ -115,7 +115,9 @@ OutputHands
      ├── Gesture1_3.mp4
      └── Gesture1_4.mp4
 ```
+#### Results
 
+![hand](hand_landmarks.gif "title-1") ![face](face_landmarks.gif "title-2")
 
 ### 3. Use either relative or absolute data to train your RNN model.
 
