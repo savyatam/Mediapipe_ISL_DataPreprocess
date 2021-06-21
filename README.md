@@ -1,7 +1,7 @@
 # Modify data with Mediapipe 
 #### Multi hand tracking and Face mesh
 
-This code is built upon [rabBit64's](https://github.com/rabBit64/Sign-language-recognition-with-RNN-and-Mediapipe)
+This repo contains code taken from [rabBit64's project](https://github.com/rabBit64/Sign-language-recognition-with-RNN-and-Mediapipe)
 
 ### Data Preprocessing with Mediapipe (Desktop on CPU)
 Create training data on Desktop with input video using [Multi Hand Tracking](https://github.com/google/mediapipe/blob/master/mediapipe/docs/multi_hand_tracking_mobile_gpu.md).
@@ -13,7 +13,7 @@ Gesture recognition with deep learning model can be done with **hand landmark an
 - Similarly reprocess face landmarks for every frame per one word and make it into one txt file. 
 - Now append each hand landmarks txt file to corresponding face landmarks txt file .
 
-###New : Use [Holistic Tracking](https://google.github.io/mediapipe/solutions/holistic.html) instead 
+### New : Use [Holistic Tracking](https://google.github.io/mediapipe/solutions/holistic.html) instead 
 
 
 ### 1. Set up Hand Tracking framework
