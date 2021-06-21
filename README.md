@@ -67,7 +67,7 @@ To make mp4 file and txt file with mediapipe automatically, run inside mediapipe
 ```
 For example
 ```shell
-  python build_multihands --input_data_path=Input/ --output_data_path=OutputHands/
+  python build_multihands.py --input_data_path=Input/ --output_data_path=OutputHands/
 ```
 
 
@@ -117,11 +117,11 @@ OutputHands
 ```
 #### Results
 
-hand            |  face
+buil_multihands.py - multihands          |  build_facemesh.py - face 
 :-------------------------:|:-------------------------:
 ![](hand_landmarks.gif)  |  ![](face_landmarks.gif)
 
-
+This video is taken from [Sign Samples from the BosphorusSign Database - General](https://www.cmpe.boun.edu.tr/pilab/BosphorusSign/bosphorusSign_general_en.html)
 
 ### 3. Use either relative or absolute data to train your RNN model.
 
