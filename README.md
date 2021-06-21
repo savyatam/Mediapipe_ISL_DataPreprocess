@@ -117,7 +117,11 @@ OutputHands
 ```
 #### Results
 
-![hand](hand_landmarks.gif "title-1") | ![face](face_landmarks.gif "title-2")
+hand            |  face
+:-------------------------:|:-------------------------:
+![](hand_landmarks.gif)  |  ![](face_landmarks.gif)
+
+
 
 ### 3. Use either relative or absolute data to train your RNN model.
 
