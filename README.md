@@ -4,10 +4,7 @@
 This repo contains code taken from [rabBit64's project](https://github.com/rabBit64/Sign-language-recognition-with-RNN-and-Mediapipe)
 
 ### Data Preprocessing with Mediapipe (Desktop on CPU)
-Create training data on Desktop with input video using [Multi Hand Tracking](https://github.com/google/mediapipe/blob/master/mediapipe/docs/multi_hand_tracking_mobile_gpu.md).
-Gesture recognition with deep learning model can be done with **hand landmark and face landmark features** per frame with RNN training .
 
-**CUSTOMIZE:**
 - Use video input instead of Webcam on Desktop to train with video data
 - Preprocess hand landmarks for every frame per one word and make it into one txt file
 - Similarly reprocess face landmarks for every frame per one word and make it into one txt file. 
